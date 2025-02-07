@@ -3,58 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Importar Feliz</title>
+    <title>Importar Feliz | Productos Premium</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Importar Feliz</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-        <button id="language-toggle">English</button>
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <a href="#" class="brand">Importar Feliz</a>
+            <div class="nav-links">
+                <a href="#productos">Productos</a>
+                <a href="#influencers">Influencers</a>
+                <a href="#contacto">Contacto</a>
+                <button class="lang-toggle">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Belleza Sin Fronteras</h1>
+            <p class="hero-sub">Productos premium de belleza y cuidado personal para el mercado latino</p>
+            <div class="cta-container">
+                <a href="#influencers" class="cta-primary">Sé Influencer</a>
+                <a href="#productos" class="cta-secondary">Ver Catálogo</a>
+            </div>
+        </div>
     </header>
 
-    <section id="hero">
-        <h2>Importando Productos de Belleza y Salud a América Latina</h2>
-        <p>Contáctenos para importar los mejores productos de belleza, salud y cuidado de la piel para su negocio.</p>
-        <a href="#contact" class="cta-button">Contáctenos</a>
-    </section>
-
-    <section id="products">
-        <h2>Nuestros Productos</h2>
-        <p>Nos especializamos en importar productos de belleza, salud y cuidado de la piel de alta calidad.</p>
-        <div class="product-categories">
-            <div>Productos de Belleza</div>
-            <div>Productos de Salud</div>
-            <div>Productos para el Cuidado de la Piel</div>
-            <div>Ropa</div>
+    <section id="influencers" class="section influencers">
+        <div class="section-content">
+            <h2>Programa de Influencers</h2>
+            <div class="grid-container">
+                <div class="benefit-card">
+                    <i class="fas fa-gift"></i>
+                    <h3>Productos Gratis</h3>
+                    <p>Recibe muestras mensuales de nuestros últimos lanzamientos</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Comunidad Exclusiva</h3>
+                    <p>Acceso a eventos privados y networking con otras creadoras</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Crecimiento Personal</h3>
+                    <p>Talleres de marketing digital y desarrollo de marca personal</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="influencer">
-        <h2>¡Sé un Influencer!</h2>
-        <p>Únete a nuestro equipo de marketing y recibe productos, muestras y ropa gratis. ¡Aplica ahora y forma parte de nuestra comunidad de influencers!</p>
-        <a href="#contact" class="cta-button">Aplica Aquí</a>
+    <section id="productos" class="section products">
+        <div class="section-content">
+            <h2>Nuestras Categorías</h2>
+            <div class="category-grid">
+                <div class="category-card skincare">
+                    <h3>Cuidado de la Piel</h3>
+                    <p>Serums, limpiadores y protectores solares de última generación</p>
+                </div>
+                <div class="category-card makeup">
+                    <h3>Maquillaje</h3>
+                    <p>Productos veganos y cruelty-free de alta pigmentación</p>
+                </div>
+                <div class="category-card wellness">
+                    <h3>Bienestar</h3>
+                    <p>Suplementos y productos de cuidado personal premium</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="contact">
-        <h2>Contacto</h2>
-        <p>Contáctenos para todas sus necesidades de importación.</p>
-        <form>
-            <input type="text" placeholder="Su Nombre">
-            <input type="email" placeholder="Su Correo Electrónico">
-            <textarea placeholder="Su Mensaje"></textarea>
-            <button type="submit">Enviar Mensaje</button>
-        </form>
+    <section id="contacto" class="section contact">
+        <div class="section-content">
+            <h2>Contacto Comercial</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Nombre completo" required>
+                    <input type="email" placeholder="Correo electrónico" required>
+                </div>
+                <textarea placeholder="Cuéntanos sobre tu proyecto o negocio..." rows="4"></textarea>
+                <button type="submit">Enviar Solicitud <i class="fas fa-arrow-right"></i></button>
+            </form>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Importar Feliz | <a href="https://www.instagram.com/importarfeliz" target="_blank">Instagram</a></p>
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://instagram.com/importarfeliz" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p class="copyright">&copy; 2025 Importar Feliz. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
